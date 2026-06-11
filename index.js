@@ -10,7 +10,7 @@ const app = new App
   socketMode: true
 });
 
-app.command("/dsb-test", async ({ command, ack, respond }) =>
+app.command("/dsb-teststring", async ({ command, ack, respond }) =>
 {
   const start = Date.now();
   await ack();
@@ -62,7 +62,7 @@ app.command("/dsb-help", async ({ ack, respond }) =>
   {
     text:
     `Available Commands:
-    /dsb-test - just for testing purposes!
+    /dsb-teststring - just for testing purposes!
     /dsb-pingpong - let's see how long I take to respond...
     /dsb-funcatfact - fun cat facts!
     /dsb-extremelyfunnyjoke - extremely funny joke! (maybe not but please act like it's funny...)`
